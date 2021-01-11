@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-const Index = () => (
+const Index = ({go}) => (
     <div className="full-page">
         <Navbar />
         <div className="wrapper">
@@ -16,11 +16,11 @@ const Index = () => (
                         <li>Recibe tus regalos</li>
                     </ul>
                     <div className="text-center pr-5 pt-3 pl-5">
-                        <button className="button-red w-100">Ir</button>
+                        <button id="register" onClick={go} className="button-red w-100">Ir</button>
                     </div>
                     <h5 className="text-red text-center pt-4">¿Ya tienes una cuenta?</h5>
                     <div className="text-center pr-5 pt-3 pl-5 pb-5">
-                        <button className="button-red w-100">Iniciar</button>
+                        <button id="login" onClick={go} className="button-red w-100">Iniciar</button>
                     </div>
                 </div>
             </div>
