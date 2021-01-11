@@ -2,27 +2,27 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-const Login = () => (
+const AddMember = () => (
     <div className="full-page">
         <Navbar />
         <div className="wrapper">
             <div className="container-center">
                 <div className="container-primary">
-                    <h2 className="text-center mt-5">Iniciar sesión</h2>
+                    <h2 className="text-center mt-5">Agregar integrante</h2>
                     <div className="p-4">
                         <form>
                             <div className="form-group">
-                                <label htmlFor="correo">Correo o usuario</label>
-                                <input type="text" className="form-control" id="correo" />
+                                <label htmlFor="nombre">Nombre</label>
+                                <input type="text" className="form-control" id="nombre" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="clave">Contraseña</label>
-                                <input type="password" className="form-control" id="clave" />
-                                <p className="text-red f-12 mt-2">Olvidé contraseña</p>
+                                <label htmlFor="correo">Correo</label>
+                                <input type="email" className="form-control" id="correo" />
+                                <p className="text-red f-12 mt-2">No necesita estar registrado</p>
                             </div>
                             <div className="text-right">
-                                <button type="button" className="button-red">
-                                    Ingresar
+                                <button type="button" className="w-100 button-red">
+                                    Agregar
                                 </button>
                             </div>
                         </form>
@@ -34,4 +34,4 @@ const Login = () => (
     </div>
 );
 
-export default Login;
+export default AddMember;
