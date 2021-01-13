@@ -1,14 +1,12 @@
 .full-page{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     background-color: #214252;
     background-image: url('../images/fondo.png');
     background-repeat: repeat;
 }
 .wrapper{
     padding-top: 15.9vh;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 .flex-center{
     display: flex;
@@ -18,10 +16,12 @@
 }
 .container-center{
     display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75.6vh;
+    min-height: 75.6vh;
     overflow-y: auto;
 }
 .container-primary{
@@ -41,7 +41,7 @@
 }
 
 .footer {
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     padding-top: 10px;

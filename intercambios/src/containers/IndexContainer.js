@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 const IndexContainer = () =>{
     const history = useHistory();
-
+    
     const go = (e) => history.push( e.target.id );
 
     return(
